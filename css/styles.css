@@ -19,8 +19,13 @@
 
 /* reset some default styles */
 
-.visually-hidden,
 input[type='checkbox'] {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.visually-hidden {
+  /* input[type='checkbox']  */
   position: absolute;
   width: 1px;
   height: 1px;
@@ -800,7 +805,7 @@ body {
   color: var(--secondary-text-color-dark);
 }
 
-.form .form-input {
+.form .form-input:not([type='checkbox']) {
   background-color: transparent;
   padding: 12px 12px 12px 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
