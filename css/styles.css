@@ -874,6 +874,10 @@ body {
   align-items: center;
 }
 
+.form-checkbox .checkbox-link {
+  margin-left: 5px;
+}
+
 input[type='checkbox'] + .check {
   position: relative;
   display: inline-flex;
