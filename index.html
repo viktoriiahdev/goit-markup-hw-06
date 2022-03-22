@@ -403,7 +403,7 @@
         <div class="subscribe">
           <p class="subtitle">Подпишитесь на рассылку</p>
           <form class="form form-subscribe">
-            <input class="form-input" type="email" name="" id="" placeholder="E-mail" />
+            <input class="form-input" type="email" name="email" placeholder="E-mail" />
             <button class="button button-main" type="submit">
               Подписаться
               <svg class="icon" width="24" height="24">
@@ -449,20 +449,19 @@
             <label for="comment">Комментарий</label>
             <textarea
               class="form-input"
-              type="text"
               name="comment"
               id="comment"
               placeholder="Введите текст"
             ></textarea>
           </div>
           <div class="form-field form-checkbox">
-            <input class="form-input" type="checkbox" name="agreemant" id="agreemant" />
-            <span class="check">
-              <svg class="icon icon-check" width="16" height="15">
-                <use href="./images/icons.svg#check"></use>
-              </svg>
-            </span>
             <label for="agreemant">
+              <input class="form-input" type="checkbox" name="agreemant" id="agreemant" />
+              <span class="check">
+                <svg class="icon icon-check" width="16" height="15">
+                  <use href="./images/icons.svg#check"></use>
+                </svg>
+              </span>
               Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
             </label>
           </div>

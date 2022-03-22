@@ -754,18 +754,18 @@ body {
   cursor: pointer;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-modal:hover {
   color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 .close-modal .icon {
   width: 11px;
   height: 11px;
   color: currentColor;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* form styles */
@@ -869,6 +869,11 @@ body {
   color: var(--secondary-text-color-dark);
 }
 
+.form-checkbox label {
+  display: flex;
+  align-items: center;
+}
+
 input[type='checkbox'] + .check {
   position: relative;
   display: inline-flex;
@@ -878,6 +883,9 @@ input[type='checkbox'] + .check {
 
   border-radius: 2px;
   border: 2px solid var(--main-text-color-dark);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 input[type='checkbox'] + .check .icon-check {
@@ -886,6 +894,11 @@ input[type='checkbox'] + .check .icon-check {
   box-sizing: content-box;
   left: -2px;
   top: -2px;
+}
+
+input[type='checkbox']:hover + .check,
+input[type='checkbox']:focus + .check {
+  border-color: var(--accent-color);
 }
 
 .form-checkbox input:checked + .check .icon-check {
